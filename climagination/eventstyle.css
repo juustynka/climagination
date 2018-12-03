@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+/* //upcoming events styling  */
+
+.wrap-events {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+.card {
+    width: 225px;
+    height: 330px;
+    background-color: white;
+    border-radius: 2em;
+    -webkit-box-shadow: 0px 0px 47px -24px rgba(61,61,61,1);
+    -moz-box-shadow: 0px 0px 47px -24px rgba(61,61,61,1);
+    box-shadow: 0px 0px 47px -24px rgba(61,61,61,1);
+}
+
+.heading {
+    height: 29%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2em 2em 0em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.heading span {
+    width: 0.7em;
+    height: 2.4em;
+    background-color: #c84435;
+    margin-left: -12%;
+}
+.heading h1 span {
+    background-color: white;
+    margin-left: 0;
+    color: #6d6e71;
+    font-size: 0.8em;
+}
+
+.heading h1 {
+    font-size: 0.9em;
+    color: #3a3a3c;
+    margin: 2% 0 0 5%;
+}
+
+.heading h2 {
+    font-size: 3em;
+    letter-spacing: -6px;
+    color: #3a3a3c;
+    font-weight: 900;
+}
+br {
+    display: block;
+    margin: 0;
+    
+}
+.content {
+    width: 100%;
+    height: 60%;
+    background-color: #f3f3f4;
+}
+
+.content h1 {
+    margin: 0;
+    padding: 0.7em 0em 0em 0.8em;
+    color: #3a3a3c;
+    font-size: 1.2em;
+    
+}
+.content h2 {
+    margin: 0;
+    padding: 0.3em 0em 0em 1.6em;
+    color: #818285;
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 0.7em;
+    padding: 2em 1.1em 1em 1.5em;
+    color: #414042;
+}
+.card button {
+    width: 100%;
+    padding: 5%;
+    background-color: #4267B2;
+    border-radius: 0em 0em 2em 2em;
+    border: none;
+    color: white;
+    margin: 0;
+}
+
+.card button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+/* news styling 
+
+button {
+    width: 170px;
+    height: 105px;
+    padding-top: 2em;
+    padding-left: 1.5em;
+    border-radius: 2em;
+    border: none;
+    background: linear-gradient(135deg, #f7941d 0%,#df5773 83%);
+    color: white;
+    position: relative;
+}
+button span {
+    display: block;
+    position: relative;
+    width: 128px;
+    text-align: left;
+    font-size: 1.2em;
+} */

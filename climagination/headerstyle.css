@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+header {
+height: 100vh;
+width: 100%;
+background: url('images/background.svg');
+background-repeat: no-repeat;
+background-size: 100%;
+margin: 0;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2e3483;
+}
+
+nav li {
+    float: right;
+    margin: 1.5% 3% 1.5% 3%;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+
+header .text-container {
+  width: 45%;
+  margin: 10em 0 0 4em;
+  position: absolute;
+}
+
+
+header .text-container p {
+  color: white;
+  font-size: 1em;
+}
+
+header .text-container h1 {
+text-transform: uppercase;
+font-size: 2.3em;
+margin: 0;
+color: #130D3D;
+}
+
+
+header span {
+color: rgb(255, 255, 255);
+text-transform: uppercase;
+font-size: 1.1em;
+display: inline-block;
+font-weight: bold;
+}
+
+
+header img {
+  width: 41%;
+  float: right;
+  margin-top: 7%;
+  margin-right: 3%
+}

@@ -6,30 +6,24 @@ body {
 }
 
 header {
-height: 100vh;
-width: 100%;
-background: url('images/background.svg');
-background-repeat: no-repeat;
-background-size: 100%;
-margin: 0;
+  margin: 0;
+  background-color: #2e3483;
 }
 
 nav {
-  width: 100%;
   margin: 0;
+  background-color: #2e3483;
 }
 nav ul {
     list-style-type: none;
-    margin-right: 0;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2e3483;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav li {
     float: right;
-    margin: 1.5% 3% 1.5% 3%;
+    padding: 0 20px;
 }
 
 nav li a {
@@ -40,12 +34,14 @@ nav li a {
     font-size: 1em;
 }
 
+header {
+  display:block;
+}
 
 
 header .text-container {
-  width: 45%;
-  margin: 10em 0 0 4em;
-  position: absolute;
+  padding-top: calc(50px + (100 - 50) * ((100vw - 300px) / (1920 - 300)));
+  padding-bottom: calc(50px + (100 - 50) * ((100vw - 300px) / (1920 - 300)));
 }
 
 
@@ -55,10 +51,12 @@ header .text-container p {
 }
 
 header .text-container h1 {
-text-transform: uppercase;
-font-size: 2.3em;
-margin: 0;
-color: #130D3D;
+  text-transform: uppercase;
+  margin: 0;
+  color: #130D3D;
+
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(30px + (65 - 30) * ((100vw - 300px) / (1920 - 300)));
 }
 
 
@@ -72,8 +70,46 @@ font-weight: bold;
 
 
 header img {
-  width: 41%;
-  float: right;
-  margin-top: 7%;
-  margin-right: 3%
+  width: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  bottom: calc((70px + (150 - 70) * ((100vw - 300px) / (1920 - 300))) * -1);
+}
+
+header section {
+  position: relative;
+}
+
+.curve-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background-color: #2e3483;
+}
+
+.curve-container__curve {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  display: block;
+}
+
+.curve-container__curve.curve-three path {
+  fill: #FFF;
+}
+
+@media only screen and (max-width: 580px) {
+
+  header .text-container {
+    padding-bottom: calc(60px + (130 - 60) * ((100vw - 300px) / (580 - 300)));
+  }
+
+  header img {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: calc((40px + (100 - 40) * ((100vw - 300px) / (1920 - 300))) * -1);
+  }
 }

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.facts {
+  margin-left: 15%;
+  align-items: center;
+  margin-right: 15%;
+  padding-top: 10%;
+}
+
+.facts img {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+}
+
+.facts p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,20 @@
+
+main img.about {
+    width: 100%;
+}
+
+main img.aboutphone {
+    display: none;
+}
+
+@media screen and (max-width: 590px) {
+    main img.about {
+        display: none;
+    }
+    
+    main img.aboutphone {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+  }

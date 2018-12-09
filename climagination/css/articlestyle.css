@@ -1,0 +1,56 @@
+.article-content {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+            column-gap: 6rem;
+  }
+
+  .article-title {
+    display: flex;
+    padding-bottom: 50px;
+    width: 70%;
+  }
+.article-title span {
+    width: 1em;
+    height: 10%;
+    background-color: #c84435;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+
+.article-title h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.article-title h2 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #939598;
+    font-style: italic;
+}
+@media only screen and (max-width: 800px) {
+    .article-content {
+        column-count: 1;
+    }
+
+
+}
+@media only screen and (max-width: 1070px) {
+    .article-content {
+        column-gap: 2rem;
+       
+    }
+}
+
+
+
+
+
+
+
+
+

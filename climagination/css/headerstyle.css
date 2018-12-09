@@ -1,0 +1,168 @@
+/* general */
+
+html {
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  background-color: #2e3483;
+}
+
+main {
+  margin-top:150px;
+  margin-bottom: 150px;
+}
+
+/* START: navigation */
+
+nav {
+  background-color: #292e79;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  padding: 20px calc(12px + (15 - 13) * ((100vw - 300px) / (1920 - 300)));
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* END: navigation */
+
+/* START: hero */
+
+.hero {
+  position: relative;
+}
+
+.hero .text-container {
+  padding-top: calc(100px + (150 - 100) * ((100vw - 300px) / (1920 - 300)));
+  padding-bottom: calc(100px + (150 - 100) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.hero .text-container p {
+color: white;
+font-size: 1.5rem;
+margin-top: 20px;
+}
+
+.hero .text-container h1 {
+  text-transform: uppercase;
+  color: #130D3D;
+  font-weight: bold;
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(30px + (65 - 30) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.hero span {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 1.1em;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.hero img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  bottom: calc((70px + (150 - 70) * ((100vw - 300px) / (1920 - 300))) * -1);
+}
+
+@media only screen and (max-width: 580px) {
+  /* header */
+  .hero .text-container {
+    padding-top: calc(30px + (80 - 30) * ((100vw - 300px) / (580 - 300)));
+    padding-bottom: calc(100px + (250 - 100) * ((100vw - 300px) / (580 - 300)));
+    text-align: center;
+  }
+  .hero img {
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: calc((80px + (100 - 80) * ((100vw - 300px) / (580 - 300))) * -1);
+  }
+}
+
+/* END: hero */
+
+/* START: wave curve */
+
+.curve-container {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background-color: #2e3483;
+}
+
+.curve-container .curve {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+  display: block;
+}
+
+.curve-container .curve path {
+  fill: #FFF;
+}
+
+/* END: wave curve */
+
+/* START: mobile navigation */
+.mobile-navigation {
+  background: #292e79;
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Hide desktop navigation */
+  nav {
+    display: none;
+  }
+  /* Show mobile navigation */
+  .mobile-navigation {
+    display: block;
+  }
+  /* Links are not visible before expanded */
+  .mobile-navigation-links {
+    display: none;
+  }
+  /* Navigation bar, expand icon alignment right side */
+  .mobile-navigation .mobile-navigation-bar {
+    padding: 15px;
+    text-align: right;
+  }
+  /* Expand icon size and color */
+  .mobile-navigation .mobile-navigation-bar a {
+    font-size: 30px;
+    color: white;
+  }
+  /* links */
+  .mobile-navigation .mobile-navigation-links li {
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+  .mobile-navigation .mobile-navigation-links a {
+    font-size: 30px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+
+/* END: mobile navigation */

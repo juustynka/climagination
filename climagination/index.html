@@ -11,46 +11,110 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"> -->
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="headerstyle.css">
-  <link rel="stylesheet" href="aboutstyle.css">
-  
+  <!-- stylesheet that resets browser default stylings, so they start from stratch on all browsers -->
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+
+
+  <!-- our styles -->
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/headerstyle.css">
+  <link rel="stylesheet" href="css/footerstyle.css">
+  <link rel="stylesheet" href="css/aboutstyle.css">
+
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 </head>
 
 <body>
   <header>
+
+    <!-- START: mobile navigation -->
+    <div class="mobile-navigation">
+      <div class="mobile-navigation-bar">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMobileNavigation()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <ul class="mobile-navigation-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="did-you-know.html">Did you know?</a></li>
+        <li><a href="previous-events.html">Previous events</a></li>
+        <li><a href="upcoming-events.html">Upcoming events</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <!-- END: mobile navigation -->
+
+    <!-- START: navigation -->
     <nav>
       <ul class="container">
-        <li> <a href="gallery.html"> Gallery </a> </li>
-        <li> <a href="news.html"> News </a> </li>
-        <li> <a href="previous-events.html"> Previous events </a> </li>
-        <li> <a href="upcoming-events.html"> Upcoming events </a> </li>
-        <li> <a href="did-you-know.html"> Did you know? </a> </li>
-        <li> <a href="index.html"> Home </a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="did-you-know.html">Did you know?</a></li>
+        <li><a href="previous-events.html">Previous events</a></li>
+        <li><a href="upcoming-events.html">Upcoming events</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
-    <section class="container">
-        <div class="text-container">
-          <h1>Welcome to the
-            <br><span>Climagination</span>.
-          </h1>
-          <p> Climagination is preventing climate change <br>through creating the art. Be a part of it! </p>
-        </div>
-        <img src="images/jay.png" />
+    <!-- END: navigation -->
+
+    <!-- START: Hero -->
+    <section class="hero container">
+      <div class="text-container">
+        <h1>Welcome to the
+          <br><span>Climagination</span>.
+        </h1>
+        <p>Climagination is preventing climate change <br>through creating the art. Be a part of it!</p>
+      </div>
+      <img src="images/jay.png" />
     </section>
   </header>
+  <!-- END: Hero -->
+
+  <!-- START: wave curve -->
   <div class="curve-container">
-    <svg xmlns="http://www.w3.org/2000/svg" class="curve-container__curve curve-three" viewBox="0 0 1440 68"
-        enable-background="new 0 0 1440 68">
+    <svg xmlns="http://www.w3.org/2000/svg" class="curve" viewBox="0 0 1440 68" enable-background="new 0 0 1440 68">
+      <path d="m1622.3 1937.7c0 0-410.7 169.1-913.4 75.5-502.7-93.6-977.7 56.3-977.7 56.3v440h1891.1v-571.8" fill="#F4F5F7"
+        transform="translate(0-1977)"></path>
+    </svg>
+  </div>
+  <!-- END: wave curve -->
+
+  <!-- START: Main -->
+  <main class="container">
+    <img class="about" src="images/aboutpage.jpg">
+    <img class="aboutphone" src="images/aboutmobile.jpg">
+  </main>
+  <!-- END: Main -->
+  <div class="curve-container inverse">
+      <svg xmlns="http://www.w3.org/2000/svg" class="curve" viewBox="0 0 1440 68" enable-background="new 0 0 1440 68">
         <path d="m1622.3 1937.7c0 0-410.7 169.1-913.4 75.5-502.7-93.6-977.7 56.3-977.7 56.3v440h1891.1v-571.8" fill="#F4F5F7"
           transform="translate(0-1977)"></path>
       </svg>
-  </div>
-  <main class="container">
-    <img class="about" src="images/aboutpage.jpg">
-  </main>
+    </div>
+  <footer> 
+      <div class="hero-footer container">
+  
+              <p>Feel free to <span class="contact"> contact me in case you have any questions.</span></p>  
+              <div class="text-wrapper">
+                  <h1>Jay Sterling Gregg</h1>
+                  <span class="email">jay@climagination.org</span> <br>
+                  <span class="phone"> +4550334779</span>
+                
+              </div>
+      </div>
+  
+  
+  
+   
+  </footer>
+  <!-- Our scripts -->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

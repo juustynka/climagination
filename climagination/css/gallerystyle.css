@@ -1,0 +1,166 @@
+body {
+  background-color: #fff
+}
+
+.galleryFilters {
+  margin: 20px auto;
+  align-content: center;
+  display: none;
+}
+
+.galleryFilters .filterList {
+  display: none;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.galleryFilters .filterList .filterListItem {
+  margin-right: 10px;
+  display: block;
+}
+
+.galleryFilters {
+  color: #fff;
+}
+
+.galleryFilters {
+  flex-grow: 1;
+  width: auto;
+}
+
+.galleryContainer .thumbnail {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.galleryContainer .thumbnail img {
+  max-width: 100%;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.galleryContainer .thumbnail .item-desc {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJzdHlsZS5jc3MiXSwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7IH1cblxuLmdhbGxlcnlGaWx0ZXJzIHtcbiAgbWFyZ2luOiAyMHB4IGF1dG87XG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjsgfVxuICAuZ2FsbGVyeUZpbHRlcnMgLmZpbHRlckxpc3Qge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMDsgfVxuICAgIC5nYWxsZXJ5RmlsdGVycyAuZmlsdGVyTGlzdCAuZmlsdGVyTGlzdEl0ZW0ge1xuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4OyB9XG4gICAgICAuZ2FsbGVyeUZpbHRlcnMgLmZpbHRlckxpc3QgLmZpbHRlckxpc3RJdGVtLmFjdGl2ZSB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICM5NTE3YzM7IH1cbiAgLmdhbGxlcnlGaWx0ZXJzIC52aW9sZXRCdG4ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM2MTBmN2Y7XG4gICAgY29sb3I6ICNmZmZmZmY7IH1cbiAgLmdhbGxlcnlGaWx0ZXJzIC5zZWFyY2hCYXIge1xuICAgIGZsZXgtZ3JvdzogMTtcbiAgICB3aWR0aDogYXV0bztcbiAgICBib3JkZXItY29sb3I6ICM2MTBmN2Y7IH1cbiAgICAuZ2FsbGVyeUZpbHRlcnMgLnNlYXJjaEJhcjpmb2N1cyB7XG4gICAgICBib3gtc2hhZG93OiAwcHggMHB4IDVweCAjNjEwZjdmOyB9XG5cbi5nYWxsZXJ5Q29udGFpbmVyIC50aHVtYm5haWwge1xuICBwYWRkaW5nLWJvdHRvbTogMjBweDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBib3JkZXItcmFkaXVzOiA1cHg7IH1cbiAgLmdhbGxlcnlDb250YWluZXIgLnRodW1ibmFpbCBpbWcge1xuICAgIG1heC13aWR0aDogMTAwJTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBib3gtc2hhZG93OiAwcHggMHB4IDEwcHggcmdiYSgwLCAwLCAwLCAwLjgpOyB9XG4gIC5nYWxsZXJ5Q29udGFpbmVyIC50aHVtYm5haWwgLml0ZW0tZGVzYyB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMTBweDtcbiAgICByaWdodDogMTVweDtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgICBjb2xvcjogI2ZmZmZmZjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNjEwZjdmO1xuICAgIHBhZGRpbmc6IDVweCAxMHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDsgfVxuIl0sImZpbGUiOiJzdHlsZS5jc3MifQ== */
+
+/* Lightbox */
+
+/* Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  max-width: 100%;
+}
+
+/* The Close Button */
+
+.closebtn {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closebtn:hover, .closebtn:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/81 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* End of lightbox */
